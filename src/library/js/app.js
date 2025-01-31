@@ -26,17 +26,19 @@ var swiper1 = new Swiper(".mySwiper", {
 //   clickable: true,
 //   touchEventsTarget: 'container', 
 });
-const refresh = ()=>{
-  console.log("sdasdsa");
-  window.location.reload();
-}
-window.addEventListener("online",refresh);
 
-document.addEventListener("visibilitychange", () => {
-  if (document.visibilityState === 'visible') {
-    refresh(); // Reloads the page when the document becomes visible
-  }
-});
+//auto refresh code
+// const refresh = ()=>{
+//   console.log("sdasdsa");
+//   window.location.reload();
+// }
+// window.addEventListener("online",refresh);
+
+// document.addEventListener("visibilitychange", () => {
+//   if (document.visibilityState === 'visible') {
+//     refresh(); // Reloads the page when the document becomes visible
+//   }
+// });
 
 new kursor({
   type: 4,
