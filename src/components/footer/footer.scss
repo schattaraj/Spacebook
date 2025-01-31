@@ -1,0 +1,21 @@
+.footer {
+    padding: 20px 0;
+    background-color: #f8f9fa; /* Light background color */
+}
+
+.footer .nav-link {
+    color: #343a40; /* Dark text color */
+    transition: color 0.3s;
+}
+
+.footer .nav-link:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.footer .copyright {
+    margin-top: 20px; /* Add space above the copyright section */
+    padding-top: 10px; /* Add padding to the top */
+    border-top: 1px solid #dee2e6; /* Add a top border for separation */
+    color: #6c757d; /* Slightly lighter text color */
+    font-size: 0.9rem; /* Slightly smaller font size */
+}
