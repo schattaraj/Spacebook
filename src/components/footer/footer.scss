@@ -19,3 +19,27 @@
     color: #6c757d; /* Slightly lighter text color */
     font-size: 0.9rem; /* Slightly smaller font size */
 }
+.footer-sticky-mobile{
+        background: $primary;
+        padding: 10px;
+        width: 100%;
+        max-width: 100%;
+        position: fixed;
+        bottom: 0;
+        z-index: 999;
+        margin-left: 0px;
+        box-shadow: 0 0 21px 8px rgb(255,255,255,.26);
+        img{
+            height: 30px;
+        }
+    display: flex;
+    justify-content: space-around;
+    a{
+        color: #fff;
+        text-align: center;
+        font-size: 12px;
+        span{
+            display: block;
+        }
+    }
+}

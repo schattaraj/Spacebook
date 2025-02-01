@@ -28,17 +28,18 @@ var swiper1 = new Swiper(".mySwiper", {
 });
 
 //auto refresh code
-// const refresh = ()=>{
-//   console.log("sdasdsa");
-//   window.location.reload();
-// }
-// window.addEventListener("online",refresh);
+const refresh = ()=>{
+  if(window.location.hostname == "localhost"){
+    window.location.reload();
+  }
+}
+window.addEventListener("online",refresh);
 
-// document.addEventListener("visibilitychange", () => {
-//   if (document.visibilityState === 'visible') {
-//     refresh(); // Reloads the page when the document becomes visible
-//   }
-// });
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === 'visible') {
+    refresh(); // Reloads the page when the document becomes visible
+  }
+});
 
 new kursor({
   type: 4,
@@ -89,7 +90,9 @@ var swiper2 = new Swiper('.swiper-container', {
 
 $(document).ready(function() {
   // Trigger the modal after 1 second of page load
-  setTimeout(function() {
-    $('#welcomeModal').modal('show');
-  }, 1000);
+  if(window.location.hostname != "localhost"){
+    setTimeout(function() {
+      $('#welcomeModal').modal('show');
+    }, 1000);
+  } 
 });
