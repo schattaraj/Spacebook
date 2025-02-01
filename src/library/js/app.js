@@ -10,9 +10,9 @@ var swiper1 = new Swiper(".mySwiper", {
   speed: 1500,
             parallax: true,
             loop: true,
-            // autoplay: {
-            //     delay: 2500,
-            // },
+            autoplay: {
+                delay: 2500,
+            },
 //   navigation: {
 //     nextEl: ".swiper-button-next",
 //     prevEl: ".swiper-button-prev",
@@ -28,17 +28,17 @@ var swiper1 = new Swiper(".mySwiper", {
 });
 
 //auto refresh code
-// const refresh = ()=>{
-//   console.log("sdasdsa");
-//   window.location.reload();
-// }
-// window.addEventListener("online",refresh);
+const refresh = ()=>{
+  console.log("sdasdsa");
+  window.location.reload();
+}
+window.addEventListener("online",refresh);
 
-// document.addEventListener("visibilitychange", () => {
-//   if (document.visibilityState === 'visible') {
-//     refresh(); // Reloads the page when the document becomes visible
-//   }
-// });
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === 'visible') {
+    refresh(); // Reloads the page when the document becomes visible
+  }
+});
 
 new kursor({
   type: 4,
@@ -68,7 +68,12 @@ document.querySelectorAll('.service').forEach(element => {
 });
 
 var swiper2 = new Swiper('.swiper-container', {
-  slidesPerView: "auto",
+  slidesPerView: 2,
+  breakpoints:{
+    640:{
+      slidesPerView:'auto'
+    }
+  },
   spaceBetween: 10,
   freeMode: true, // Enable Free Mode
   autoplay: {
@@ -84,7 +89,7 @@ var swiper2 = new Swiper('.swiper-container', {
 
 $(document).ready(function() {
   // Trigger the modal after 1 second of page load
-  setTimeout(function() {
-    $('#welcomeModal').modal('show');
-  }, 1000);
+  // setTimeout(function() {
+  //   $('#welcomeModal').modal('show');
+  // }, 1000);
 });
