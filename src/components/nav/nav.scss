@@ -21,6 +21,12 @@
         }
         .nav-link{
           color: #fff;
+          font-weight: 500;
+        }
+        &.active{
+          .nav-link{
+            font-weight: bold;
+          }
         }
       }
       @media (max-width:991.99px) {

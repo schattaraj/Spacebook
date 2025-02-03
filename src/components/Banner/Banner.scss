@@ -24,9 +24,13 @@
                 color: #fff;
                 text-decoration: none;
             }
-            .breadcrumb-item.active{
+            .breadcrumb-item{
+                &+.breadcrumb-item::before{
+                    color: #fff;
+                }
+                &.active{
                 color: rgba(#fff,0.8);
-            }
+            }}
         }
     }
 }

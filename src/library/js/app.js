@@ -98,7 +98,20 @@ var swiper3 = new Swiper('.swiper-testimonial', {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  // Add any other Swiper options you need
+});
+var swiper4 = new Swiper('.swiper-our-team', {
+  slidesPerView: 1,
+  breakpoints:{
+    640:{
+      slidesPerView:3
+    }
+  },
+  spaceBetween: 30,
+  freeMode: true, // Enable Free Mode
+  autoplay: {
+    delay: 2500, // Set autoplay delay
+    disableOnInteraction: false, // Continue autoplay after user interactions
+  },
 });
 $(document).ready(function() {
   // Trigger the modal after 1 second of page load
@@ -107,4 +120,15 @@ $(document).ready(function() {
       $('#welcomeModal').modal('show');
     }, 1000);
   } 
+
+  let menus = document.querySelectorAll("header .navbar .nav-item .nav-link");
+for (let index = 0; index < menus.length; index++) {
+  const element = menus[index];
+  if(window.location.href == element.href){
+    console.log(element.parentElement);
+    element.parentElement.classList.add("active");
+  }
+  
+}
+
 });
