@@ -107,8 +107,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 600px;
-  min-height: 100vh;
+  height: 100vh;
   &::after{
     @include overlay($t:0,$l:0,$w:100%,$h:100%,$bg:rgba($color: #000000, $alpha: 1.0),$b:auto,$r:auto,$op:0.6);
   }
@@ -135,8 +134,8 @@ body{
 }
 @media (max-width:575.99px) {
   .swiper-slide{
-    height: 400px;
-    min-height: auto;
+    // height: 400px;
+    height: calc(100vh - 72px);
     .text-area{
       padding-top: 86px;
       .heading{
@@ -160,8 +159,8 @@ body{
         font-size: 12px;
       }
       h3{
-        font-size: 28px;
-        line-height: 100%;
+        font-size: 40px;
+        // line-height: 100%;
       }
       p{
         font-size: 14px;
