@@ -28,12 +28,12 @@ var swiper1 = new Swiper(".mySwiper", {
 });
 
 //auto refresh code
-const refresh = ()=>{
-  if(window.location.hostname == "localhost"){
-    window.location.reload();
-  }
-}
-window.addEventListener("online",refresh);
+// const refresh = ()=>{
+//   if(window.location.hostname == "localhost"){
+//     window.location.reload();
+//   }
+// }
+// window.addEventListener("online",refresh);
 
 document.addEventListener("visibilitychange", () => {
   if (document.visibilityState === 'visible') {
@@ -69,25 +69,37 @@ document.querySelectorAll('.service').forEach(element => {
 });
 
 var swiper2 = new Swiper('.swiper-container', {
-  slidesPerView: 2,
-  breakpoints:{
-    640:{
-      slidesPerView:'auto'
-    }
+  loop: true,
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+  centeredSlides: true,
+  loopAdditionalSlides: 1,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
   },
+  speed: 1000, // Adjust the speed as needed
+  grabCursor: true, // Optional: makes it more user-friendly
+  // pagination: {
+  //   // el: '.swiper-pagination',
+  //   clickable: true,
+  // },
+  // Add any other Swiper options you need
+});
+var swiper3 = new Swiper('.swiper-testimonial', {
+  slidesPerView: 1,
   spaceBetween: 10,
   freeMode: true, // Enable Free Mode
   autoplay: {
     delay: 2500, // Set autoplay delay
     disableOnInteraction: false, // Continue autoplay after user interactions
   },
-  pagination: {
-    // el: '.swiper-pagination',
-    clickable: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
   // Add any other Swiper options you need
 });
-
 $(document).ready(function() {
   // Trigger the modal after 1 second of page load
   if(window.location.hostname != "localhost"){
