@@ -4,6 +4,9 @@
 *{
   font-family: 'Hanken Grotesk', sans-serif;
 }
+body{
+  overflow-x: hidden;
+}
 //button css
 .btn{
   position: relative;
@@ -350,7 +353,6 @@
   }
 }
 .our-testimonial{
-  height: 600px;
   margin-bottom: 40px;
   .container-fluid{
     padding: 0;

@@ -1,0 +1,32 @@
+.banner-section{
+    position: relative;
+    background-image: url(../../assets/images/banner1.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center -0.48125px;
+    padding: 180px 0 160px;
+    &::before{
+        @include overlay($t:0,$l:0,$w:100%,$h:100%,$bg:rgba($color: #000000, $alpha: 1.0),$b:auto,$r:auto,$op:0.4);
+    }
+    .text{
+        text-align: center;
+        color: #fff;
+        position: relative;
+        h2{
+            font-size: 80px;
+        }
+        .breadcrumb{
+            text-transform: capitalize;
+            background-color: transparent;
+            justify-content: center;
+            a{
+                color: #fff;
+                text-decoration: none;
+            }
+            .breadcrumb-item.active{
+                color: rgba(#fff,0.8);
+            }
+        }
+    }
+}
