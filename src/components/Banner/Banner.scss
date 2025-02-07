@@ -33,4 +33,11 @@
             }}
         }
     }
+    @media (max-width:767px) {
+        .text{
+            h2{
+                font-size: 40px;
+            }
+        }
+    }
 }
