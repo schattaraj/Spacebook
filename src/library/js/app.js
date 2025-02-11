@@ -125,7 +125,6 @@ $(document).ready(function() {
 for (let index = 0; index < menus.length; index++) {
   const element = menus[index];
   if(window.location.href == element.href){
-    console.log(element.parentElement);
     element.parentElement.classList.add("active");
   }
   

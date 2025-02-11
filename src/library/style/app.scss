@@ -842,9 +842,10 @@ background-color: $primary;
   img{
     width: 100%;
   }
-  .service-details-image{
+  img.service-details-image{
     height: 420px;
     margin-bottom: 24px;
+    object-fit: cover;
   }
   .service-entry-list{
     display: flex;
@@ -871,6 +872,44 @@ background-color: $primary;
         margin-right: 6px;
         font-size: 20px;
         color: $primary;
+      }
+    }
+  }
+  @media (max-width:991.99px) {
+    .row{
+      .col-lg-4{
+        order: 2;
+        margin-top: 16px;
+      }
+    }
+  }
+  @media (max-width:767.99px) {
+    .service-entry-list{
+      .service-entry-image{
+        width: 100%;
+      }
+    }
+  }
+  @media (max-width:420.99px) {
+    ul{
+      li{
+        font-size: 14px;
+      }
+    }
+    img.service-details-image{
+      height: 220px;
+    }
+    .cta{
+      .sidebar-cta-Body{
+        padding: 20px;
+        .sidebar-cta-contact-item{
+          .icon-box{
+            width: 40px;
+            height: 40px;
+            font-size: 14px;
+            margin-right: 12px;
+          }
+        }
       }
     }
   }
@@ -962,6 +1001,20 @@ img{
     p{
       text-transform: capitalize;
       line-height: 160%;
+    }
+  }
+  @media (max-width:575.99px) {
+    .image{
+      padding: 0;
+      margin-bottom: 16px;
+      img{
+        height: 240px;
+      }
+    }
+    .row:nth-child(2){
+      .col-lg-6:first-child{
+        order: 2;
+      }
     }
   }
 }
