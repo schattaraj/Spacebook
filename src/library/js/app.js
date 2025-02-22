@@ -74,12 +74,12 @@ var swiper2 = new Swiper('.swiper-container', {
   spaceBetween: 30,
   centeredSlides: true,
   loopAdditionalSlides: 1,
-  autoplay: {
-    delay: 0,
-    disableOnInteraction: false,
-  },
-  speed: 1000, // Adjust the speed as needed
-  grabCursor: true, // Optional: makes it more user-friendly
+  // autoplay: {
+  //   delay: 0,
+  //   disableOnInteraction: false,
+  // },
+  // speed: 1000, // Adjust the speed as needed
+  // grabCursor: true, // Optional: makes it more user-friendly
   // pagination: {
   //   // el: '.swiper-pagination',
   //   clickable: true,
@@ -115,7 +115,7 @@ var swiper4 = new Swiper('.swiper-our-team', {
 });
 $(document).ready(function() {
   // Trigger the modal after 1 second of page load
-  if(window.location.hostname != "localhost"){
+  if(window.location.hostname != "localhost" && window.location.hostname != '127.0.0.1'){
     setTimeout(function() {
       $('#welcomeModal').modal('show');
     }, 1000);
