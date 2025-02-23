@@ -14,7 +14,9 @@
             </svg>
             <span>@@tag</span>
           </h3> -->
+         @@if(items.length === 0){
           <h3 class="title animate__animated animate__fadeInUp">@@title</h3>
+        }
           <!-- <p class="animate__animated animate__fadeInUp">@@description</p> -->
           <!-- <a href="#" class="btn animate__animated animate__fadeInUp">
             <span>Read More</span>
@@ -25,6 +27,13 @@
                 stroke-linejoin="round" />
             </svg>
           </a> -->
+          @@if(items.length !== 0){
+            <ul>
+          @@for(var i = 0; i< items.length; i++){
+            @@include("ListItem.html",`+(JSON.stringify(items[i]))+`)
+        }      
+      </ul>
+      }
         </div>
       </div>
     </div>

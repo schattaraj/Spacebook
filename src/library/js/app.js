@@ -10,9 +10,9 @@ var swiper1 = new Swiper(".mySwiper", {
   speed: 1500,
             parallax: true,
             loop: true,
-            autoplay: {
-                delay: 2500,
-            },
+            // autoplay: {
+            //     delay: 2500,
+            // },
 //   navigation: {
 //     nextEl: ".swiper-button-next",
 //     prevEl: ".swiper-button-prev",
