@@ -35,6 +35,7 @@
 		"gulp-sourcemaps": "3.0.0",
 		"jquery": "3.5.1",
 		"rename-css-selectors": "3.3.0",
-		"shelljs": "^0.8.4"
+		"shelljs": "^0.8.4",
+		"swiper": "^11.2.4"
 	}
 }

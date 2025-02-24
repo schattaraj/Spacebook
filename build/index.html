@@ -11,10 +11,11 @@
     <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
     <!-- <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700,900&display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
-    <link
+    <!-- <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+  /> -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="library/style/app.css">    
 </head>
@@ -28,7 +29,10 @@
             <nav class="navbar navbar-expand-lg navbar-light w-100">
                 <a class="navbar-brand" href="#">
                     <img src="assets/images/SPACEBOOK.png" alt="Logo">
+                    <div class="text">
+                    <p>SpaceBook Interior</p>
                     <span><span class="color">DESIGNING</span> SPACES, <span class="color">CREATING</span> DREAMS</span>
+                </div>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent"
@@ -199,12 +203,12 @@
   <div class="container-fluid">
     <div class="row align-items-center">
       <div class="col-md-6">
-        <div class="image animate__animated animate__fadeInLeft">
+        <div class="image" data-aos="fade-right">
           <img src="assets/images/collov-home-design-4_jQL4JCS98-unsplash.jpg" alt="">
         </div>
       </div>
       <div class="col-md-6">
-        <div class="text animate__animated animate__fadeInRight">
+        <div class="text" data-aos="fade-left">
           <!-- <h3 class="heading">
             <svg width="34" height="24" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0.99585 12L32.9959 12" stroke="black" stroke-width="2" stroke-linecap="round"
@@ -239,7 +243,7 @@
     </div>
   </div>
 </section>
-<section class="our-services">
+<section class="our-services" data-aos="fade-up">
   <div class="container-fluid">
     <div class="flex">
       <div class="left">
@@ -320,12 +324,12 @@
   <div class="container-fluid">
   <div class="row align-items-center">
       <div class="col-lg-6">
-          <div class="image">
+          <div class="image" data-aos="fade-right">
               <img src="assets/images/banner1.webp" alt="">
           </div>
       </div>
       <div class="col-lg-6">
-          <div class="text">
+          <div class="text" data-aos="fade-left">
               <h3>Our Mission</h3>
               <!-- <p>our Design approach focuses on creating personalized, innovative spaces that balance beauty and functionality. We prioritize attention to detail and quality to bring each client's vision to life.</p> -->
                <p>To Adding value through expertise and excellence.
@@ -338,7 +342,7 @@
   </div>
   <div class="row align-items-center">
       <div class="col-lg-6">
-          <div class="text">
+          <div class="text" data-aos="fade-right">
               <h3>Our Vision</h3>
               <!-- <p>our Design approach focuses on creating personalized, innovative spaces that balance beauty and functionality. We prioritize attention to detail and quality to bring each client's vision to life.</p> -->
                <p>The second step that we do is focuses on the technical and finer aspects of
@@ -349,19 +353,19 @@
           </div>
       </div>
       <div class="col-lg-6">
-          <div class="image">
+          <div class="image"  data-aos="fade-left">
               <img src="assets/images/banner2.webp" alt="">
           </div>
       </div>
   </div>
   <div class="row align-items-center">
       <div class="col-lg-6">
-          <div class="image">
+          <div class="image"  data-aos="fade-right">
               <img src="assets/images/banner3.webp" alt="">
           </div>
       </div>
       <div class="col-lg-6">
-          <div class="text">
+          <div class="text" data-aos="fade-left">
               <h3>Our Strategy</h3>
               <!-- <p>our Design approach focuses on creating personalized, innovative spaces that balance beauty and functionality. We prioritize attention to detail and quality to bring each client's vision to life.</p> -->
                <p>To Using innovative methods, latest technologies and expertise by investing in
@@ -371,7 +375,7 @@
   </div>
   </div>
   </div>
-<section class="mission team-section">
+<section class="mission team-section" data-aos="fade-up">
   <div class="container-fluid py-5">
       <div class="flex justify-content-center">
           <div class="left">
@@ -466,7 +470,7 @@
       </div>
   </div>
 </section>
-<section class="why-choose-us">
+<section class="why-choose-us" data-aos="fade-up">
   <div class="container-fluid">
     <h3 class="heading animate__animated animate__fadeInUp">
       <!-- <svg width="34" height="24" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1057,7 +1061,7 @@
     </div>
   </div>
 </section>
-<section class="endToEndInteriorSolution">
+<section class="endToEndInteriorSolution" data-aos="fade-up">
   <div class="container-fluid">
     <h3 class="heading animate__animated animate__fadeInUp"><span>End-to-end interior solutions</span></h3>
     <div class="interiors animate__animated animate__fadeInUp">
@@ -1160,7 +1164,7 @@
   </div>
 </section>
 
-<div class="our-testimonial">
+<div class="our-testimonial" data-aos="fade-up">
   <div class="container-fluid">
     <!-- <div class="row no-gutters">
       <div class="col-lg-6">
@@ -1252,7 +1256,7 @@
   </div>
   </div>
 </div>
-<section class="our-services">
+<section class="our-services" data-aos="fade-up">
   <div class="container-fluid">
     <div class="flex">
       <div class="left">
@@ -1400,13 +1404,16 @@
 <footer class="footer">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-lg-4 mb-3 mb-lg-0">
                 <a class="navbar-brand" href="#">
                     <img src="assets/images/SPACEBOOK.png" alt="Logo">
+                    <div class="text">
+                    <p>SpaceBook Interior</p>
                     <span><span class="color">DESIGNING</span> SPACES, <span class="color">CREATING</span> DREAMS</span>
+                </div>
                 </a>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4 mb-3 mb-lg-0">
                 <div class="widget widget_links">
                     <div class="widget-title">
                         <h4 class="title text-light">Address</h4>
@@ -1419,7 +1426,7 @@
                  </ul>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4 mb-3 mb-lg-0">
                 <div class="widget-title">
                     <h4 class="title text-light">CONTACT US </h4>
                      <div class="dz-social-icon">
@@ -1427,14 +1434,11 @@
                         <li class=" text-light"><a href="mailto:info@sumerinteriros.com" class="__cf_email__  text-light">info@SpaceBook.com</a></li>
                         
                        
-                        <li class=" text-light"><a href="tel:+91 1234568890" class=" text-light">Tel : +91 1234567890</a></li>
-                        
-                   
-                      <div class="d-flex mt-3">
-                      <li class=" text-light me-3"><a class="lab la-facebook text-light" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                      
-                        <li class="text-light"><a class="lab la-instagram text-light" href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                        </div>
+                        <li class=" text-light"><a href="tel:+911234568890" class="text-light">Tel : +91 1234567890</a></li>
+                                            
+                        <li class="text-light">
+                            <a class="lab la-facebook text-light" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a class="lab la-instagram text-light" href="#"><i class="fa-brands fa-instagram"></i></a></li>
                     </ul>
                 </div>
                 </div>
@@ -1475,8 +1479,9 @@
         </div>
     </div>
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="library/js/app-min.js"></script>
 </body>
 </html>

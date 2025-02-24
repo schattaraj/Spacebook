@@ -1,8 +1,8 @@
 const ProjectPath = '';
 
-$(function () {
-    $('[data-toggle="tooltip"]').tooltip();
-});
+// $(function () {
+//     $('[data-toggle="tooltip"]').tooltip();
+// });
 
 var swiper1 = new Swiper(".mySwiper", {
 //   cssMode: true,
@@ -46,7 +46,9 @@ new kursor({
   color: '#1c4349'
 });
 function changeCursorColor(color) {
-  document.querySelector('.kursor').style.borderColor = color;
+  if(document.querySelector('.kursor')){
+    document.querySelector('.kursor').style.borderColor = color;
+  } 
 }
 
 // Example: Change cursor color when hovering over specific elements
@@ -68,7 +70,7 @@ document.querySelectorAll('.service').forEach(element => {
   element.addEventListener('mouseleave', () => changeCursorColor('#1c4349'));
 });
 
-var swiper2 = new Swiper('.swiper-container', {
+var swiper2 = new Swiper('.swiper.swiper-container', {
   loop: true,
   slidesPerView: 'auto',
   spaceBetween: 30,
@@ -86,7 +88,7 @@ var swiper2 = new Swiper('.swiper-container', {
   // },
   // Add any other Swiper options you need
 });
-var swiper3 = new Swiper('.swiper-testimonial', {
+var swiper3 = new Swiper('.swiper.swiper-testimonial', {
   slidesPerView: 1,
   spaceBetween: 10,
   freeMode: true, // Enable Free Mode
@@ -99,7 +101,7 @@ var swiper3 = new Swiper('.swiper-testimonial', {
     prevEl: ".swiper-button-prev",
   },
 });
-var swiper4 = new Swiper('.swiper-our-team', {
+var swiper4 = new Swiper('.swiper.swiper-our-team', {
   slidesPerView: 1,
   breakpoints:{
     640:{
@@ -129,5 +131,7 @@ for (let index = 0; index < menus.length; index++) {
   }
   
 }
-
+AOS.init({
+  duration: 800
+});
 });
