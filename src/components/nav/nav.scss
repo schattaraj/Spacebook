@@ -18,6 +18,7 @@
         margin-bottom: 2px;
         line-height: 100%;
         font-weight: 600;
+        text-transform: uppercase;
       }
       span{
         font-size: 14px;
@@ -107,9 +108,27 @@
         }
       }
     }
-    @media (max-width:575px) {
-      padding-left: 0;
-      padding-right: 0;
-    }
   }
+    @media (max-width:575px) {
+      .container-fluid{
+        padding: 0;
+      }
+      nav.navbar{
+        // padding-left: 0;
+        // padding-right: 0;
+        .navbar-brand{
+          margin-right: 0;
+          img{
+            height: 60px;
+          }
+          p{
+            font-size: 16px;
+          }
+          span{
+            font-size: 10px;
+          }
+        }
+      }
+      }
+      
 }

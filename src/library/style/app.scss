@@ -304,6 +304,10 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    .btn{
+      margin-bottom: 16px;
+    }
   }
 }
 //why choose us
@@ -720,7 +724,7 @@ background-color: $primary;
     &.team-section{
       .swiper-slide{
         .image{
-          height: 380px;
+          height: auto;
         }
         .social-links{
           a{
@@ -731,7 +735,7 @@ background-color: $primary;
         }
       }
     }
-  }
+  } 
 }
 //left side how can We help section
 .cta{

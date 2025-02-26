@@ -10,9 +10,9 @@ var swiper1 = new Swiper(".mySwiper", {
   speed: 1500,
             parallax: true,
             loop: true,
-            // autoplay: {
-            //     delay: 2500,
-            // },
+            autoplay: {
+                delay: 2500,
+            },
 //   navigation: {
 //     nextEl: ".swiper-button-next",
 //     prevEl: ".swiper-button-prev",
@@ -76,16 +76,16 @@ var swiper2 = new Swiper('.swiper.swiper-container', {
   spaceBetween: 30,
   centeredSlides: true,
   loopAdditionalSlides: 1,
-  // autoplay: {
-  //   delay: 0,
-  //   disableOnInteraction: false,
-  // },
-  // speed: 1000, // Adjust the speed as needed
-  // grabCursor: true, // Optional: makes it more user-friendly
-  // pagination: {
-  //   // el: '.swiper-pagination',
-  //   clickable: true,
-  // },
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+  },
+  speed: 1000, // Adjust the speed as needed
+  grabCursor: true, // Optional: makes it more user-friendly
+  pagination: {
+    // el: '.swiper-pagination',
+    clickable: true,
+  },
   // Add any other Swiper options you need
 });
 var swiper3 = new Swiper('.swiper.swiper-testimonial', {
@@ -131,7 +131,5 @@ for (let index = 0; index < menus.length; index++) {
   }
   
 }
-AOS.init({
-  duration: 800
-});
+AOS.init();
 });
